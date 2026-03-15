@@ -8,11 +8,14 @@ Atividade prática de **Programação Orientada a Objetos** em Java, baseada na 
 
 Criação de classes baseadas na atividade anterior de abstração, instanciando **2 objetos de cada entidade** na classe principal e imprimindo **1 atributo e 1 método** de cada uma.
 
+O objetivo da atividade é aplicar conceitos de **abstração em POO**, representando entidades do mundo real através de **classes, atributos e métodos**, simulando comportamentos através de mensagens no console.
+
 ---
 
-## 🧩 Classes Criadas
+# 🧩 Classes Criadas
 
-### 🛒 Produto
+## 🛒 Produto
+
 | Atributo | Tipo |
 |---|---|
 | `nmProduto` | `String` |
@@ -21,11 +24,15 @@ Criação de classes baseadas na atividade anterior de abstração, instanciando
 | `qtEstoque` | `int` |
 | `categoriaProduto` | `String` |
 
-**Métodos:** `venderProduto()`,`excluirProduto()`,`consultarProduto()`
+**Métodos:**  
+`venderProduto()`  
+`excluirProduto()`  
+`consultarProduto()`
 
 ---
 
-### 🎓 Curso
+## 🎓 Curso
+
 | Atributo | Tipo |
 |---|---|
 | `nmCurso` | `String` |
@@ -34,11 +41,15 @@ Criação de classes baseadas na atividade anterior de abstração, instanciando
 | `hrCurso` | `LocalTime` |
 | `materiaCurso` | `String` |
 
-**Métodos:** `acessarCurso()`, `lecionarCurso()`, `atualizarCurso()`
+**Métodos:**  
+`acessarCurso()`  
+`lecionarCurso()`  
+`atualizarCurso()`
 
 ---
 
-### 📱 RedeSocial
+## 📱 RedeSocial
+
 | Atributo | Tipo |
 |---|---|
 | `nmRede` | `String` |
@@ -47,23 +58,97 @@ Criação de classes baseadas na atividade anterior de abstração, instanciando
 | `algoritmo` | `String` |
 | `tipoConteudo` | `String` |
 
-**Métodos:** `atualizarAlgoritmo()`, `enviarMensagem()`, `criarPerfil()`
+**Métodos:**  
+`atualizarAlgoritmo()`  
+`enviarMensagem()`  
+`criarPerfil()`
 
 ---
 
-## 👥 Colaboradores
+## 🏦 ContaBancaria
+
+| Atributo | Tipo |
+|---|---|
+| `numeroConta` | `int` |
+| `numeroAgencia` | `int` |
+| `saldo` | `double` |
+| `tipoConta` | `String` |
+| `nomeCliente` | `String` |
+
+**Métodos:**  
+`consultarSaldo()`  
+`transferir()`  
+`depositar()`
+
+---
+
+## 📁 Arquivo
+
+| Atributo | Tipo |
+|---|---|
+| `nomeArquivo` | `String` |
+| `tipoArquivo` | `String` |
+| `tamanho` | `double` |
+| `descricao` | `String` |
+| `proprietario` | `String` |
+
+**Métodos:**  
+`visualizar()`  
+`editar()`  
+`compartilhar()`
+
+---
+
+## 📖 Aula
+
+| Atributo | Tipo |
+|---|---|
+| `nomeAula` | `String` |
+| `tipo` | `String` |
+| `material` | `String` |
+| `data` | `LocalDate` |
+| `professor` | `String` |
+
+**Métodos:**  
+`lecionarAula()`  
+`atualizarConteudo()`  
+`registrarPresenca()`
+
+---
+
+## 📝 Avaliação
+
+| Atributo | Tipo |
+|---|---|
+| `nome` | `String` |
+| `data` | `LocalDate` |
+| `local` | `String` |
+| `notaMaxima` | `double` |
+| `disciplina` | `String` |
+
+**Métodos:**  
+`aplicar()`  
+`corrigir()`  
+`divulgarResultado()`
+
+---
+
+# 👥 Colaboradores
 
 | Nome |
-|---|---|
+|---|
 | Carolina Ribeiro |
-| — |
+| Carlos Roberto |
 
 ---
 
-## 📖 Conceitos Aplicados
+# 📖 Conceitos Aplicados
 
 - Abstração
+- Programação Orientada a Objetos (POO)
 - Classes e Objetos
 - Atributos e Métodos
 - Instanciação de Objetos
-- Impressão de dados no console
+- Estruturas de controle (`switch` e `loop`)
+- Manipulação de datas e horários (`LocalDate` e `LocalTime`)
+- Impressão de informações no console
