@@ -145,6 +145,25 @@ public class Main {
 
 				newAvaliacao.divulgarResultado();
 				break;
+			
+			case 8:
+				Pedido novoPedido = new Pedido();
+				
+				novoPedido.idPedido = 100;
+				novoPedido.produtoPedido = "Notebook";
+				novoPedido.nmCliente = "Carlos";
+				novoPedido.statusPedido = "ABERTO";
+				novoPedido.descricaoPedido =  "Notebook HQ com processador Intel Core i5, "
+		                + "8GB de RAM, SSD 256GB, tela Full HD 15.6 polegadas, "
+		                + "Windows 11, cor prata.";
+				
+				novoPedido.criarPedido();
+				System.out.println("-".repeat(35));
+				novoPedido.buscarPedido();
+				System.out.println("-".repeat(35));
+		        novoPedido.cancelarPedido();
+				
+				break;
 
 			case 0:
 				System.out.println("Encerrando programa...");
