@@ -16,7 +16,8 @@ public class Main {
 			System.out.println("Escolha qual Classe deseja ver: " + "\n1.Produto" + "\n2.Curso" + "\n3.Rede Social"
 					+ "\n4.Conta Bancaria" + "\n5.Arquivo" + "\n6.Aula" + "\n7.Avaliação" + "\n8.Pedido" + "\n9.Projeto"
 					+ "\n10.Jogo" + "\n11.Usuário" + "\n12.Aplicativo" + "\n13.Cliente" + "\n14.Sistema Operacional"
-					+ "\n15.Tarefa" + "\n16.Relatorio" + "\n0.Sair");
+					+ "\n15.Tarefa" + "\n16.Relatorio" + "\n17.Banco de Dados" + "\n18.Mensagem" + "\n19.Senha"
+					+ "\n20.Site" + "\n0.Sair");
 
 			op = scanner.nextInt();
 
@@ -264,6 +265,55 @@ public class Main {
 
 				rel.elaborando();
 				break;
+
+			case 17:
+				BancoDeDados bd = new BancoDeDados("MySQL", "usuarios", "localhost", 15.5, "Dados de clientes");
+
+				bd.criarRegistro("Carlos, 21 anos");
+				System.out.println("-".repeat(35));
+
+				bd.consultarRegistro("nome = Carlos");
+				System.out.println("-".repeat(35));
+
+				bd.atualizarRegistro(1, "Carlos, 22 anos");
+				break;
+
+			case 18:
+				Mensagem msg = new Mensagem(1, "Olá, tudo bem?", "20/03/2026", "Carlos", "Maria");
+
+				msg.enviarMensagem();
+				System.out.println("-".repeat(35));
+
+				msg.editarMensagem("Olá, tudo ótimo!");
+				System.out.println("-".repeat(35));
+
+				msg.excluirMensagem();
+				break;
+
+			case 19:
+				Senha senha = new Senha("123456", "31/12/2026", "Forte", "Carlos", 0);
+
+				senha.validarSenha("123456");
+				System.out.println("-".repeat(35));
+
+				senha.criptografar();
+				System.out.println("-".repeat(35));
+
+				senha.redefinir("novaSenha123");
+				break;
+
+			case 20:
+				Site site = new Site("https://meusite.com", "Meu Site", "www.meusite.com", "AWS", "Português");
+
+				site.publicar();
+				System.out.println("-".repeat(35));
+
+				site.atualizar("Novo layout disponível");
+				System.out.println("-".repeat(35));
+
+				site.excluirPagina("/contato");
+				break;
+
 			case 0:
 				System.out.println("Encerrando programa...");
 				break;
